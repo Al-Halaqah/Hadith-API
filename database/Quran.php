@@ -11,7 +11,7 @@ class Quran{
             $data = ['statusCode'=>200,'statusMessage'=>'Ok','data'=> $stmt->fetchAll(PDO::FETCH_ASSOC), 'timestamp'=>time()];
             return json_encode($data,JSON_UNESCAPED_UNICODE);
         }catch (Exception $e){
-            echo $e;
+            print_r($e);
         }
     }
 
@@ -23,7 +23,7 @@ class Quran{
             $data = ['statusCode'=>200,'statusMessage'=>'Ok','data'=> $stmt->fetchAll(PDO::FETCH_ASSOC), 'timestamp'=>time()];
             return json_encode($data,JSON_UNESCAPED_UNICODE);
         }catch (Exception $e){
-            echo $e;
+            print_r($e);
         }
     }
     public function getVersekey($number){
@@ -34,7 +34,7 @@ class Quran{
             $data = ['statusCode'=>200,'statusMessage'=>'Ok','data'=> $stmt->fetchAll(PDO::FETCH_ASSOC), 'timestamp'=>time()];
             return json_encode($data,JSON_UNESCAPED_UNICODE);
         }catch (Exception $e){
-            echo $e;
+            print_r($e);
         }
     }
 
@@ -46,7 +46,7 @@ class Quran{
             $data = ['statusCode'=>200,'statusMessage'=>'Ok','data'=> $stmt->fetchAll(PDO::FETCH_ASSOC), 'timestamp'=>time()];
             return json_encode($data,JSON_UNESCAPED_UNICODE);
         }catch (Exception $e){
-            echo $e;
+            print_r($e);
         }
     }
 
@@ -61,7 +61,7 @@ class Quran{
             $data = ['statusCode'=>200,'statusMessage'=>'Ok','data'=> $stmt->fetchAll(PDO::FETCH_ASSOC), 'timestamp'=>time()];
             return json_encode($data,JSON_UNESCAPED_UNICODE);
         }catch (Exception $e){
-            echo $e;
+            print_r($e);
         }
     }
     public function searchVerse($search){
@@ -72,7 +72,7 @@ class Quran{
             $data = ['statusCode'=>200,'statusMessage'=>'Ok','data'=> $stmt->fetchAll(PDO::FETCH_ASSOC), 'timestamp'=>time()];
             return json_encode($data,JSON_UNESCAPED_UNICODE);
         }catch (Exception $e){
-            echo $e;
+            print_r($e);
         }
     }
 
